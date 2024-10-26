@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Peluang Bisnis</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-[#524A4E] p-4 fixed w-full top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Kalisa Logo" class="h-10" />
+        </div>
+
+        <!-- link beranda -->
+        <div class="hidden md:flex space-x-6 text-white">
+          <a href="index.html" class="hover:text-gray-300 hover:">Beranda</a>
+          <a href="about.html" class="hover:text-gray-300">Tentang Kami</a>
+          <a href="produk.html" class="hover:text-gray-300">Produk</a>
+          <a href="peluang.html" class="hover:text-gray-300">Peluang Bisnis</a>
+        </div>
+
+        <!-- Login Button di laptop-->
+        <div
+          class="hidden md:block md:flex md:items-center md:gap-2 text-gray-800 bg-white px-4 py-2 rounded-md hover:bg-gray-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+            ></path>
+          </svg>
+          <a href="#">Login</a>
+        </div>
+
+        <!-- Humburger HP -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navbar HP-->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+        <a href="index.html" class="block text-white hover:text-gray-300"
+          >Beranda</a
+        >
+        <a href="about.html" class="block text-white hover:text-gray-300"
+          >Tentang Kami</a
+        >
+        <a href="produk.html" class="block text-white hover:text-gray-300"
+          >Produk</a
+        >
+        <a href="peluang.html" class="block text-white hover:text-gray-300"
+          >Peluang Bisnis</a
+        >
+        <button
+          class="text-gray-800 font-bold px-4 py-2 bg-white rounded-md hover: bg-gray-200 flex items-center gap-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+            ></path>
+          </svg>
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section
+      class="relative h-screen bg-cover bg-center bg-no-repeat text-center"
+      style="background-image: url('images/peluang.png')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <div
+          class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+        >
+          <div
+            class="w-full mb-8 md:mb-0 flex flex-col items-center justify-center"
+          >
+            <!-- Judul -->
+            <h1 class="text-3xl lg:text-5xl font-bold text-white">
+              PELUANG BISNIS
+            </h1>
+            <hr class="border-white border-2 my-4 md:w-96 w-64" />
+
+            <!-- Deskripsi -->
+            <p class="mt-4 text-sm lg:text-lg text-gray-200 max-w-2xl">
+              Kami membuka suatu peluang bisnis untuk pelanggan kami dengan
+              fleksibel dari PT. Kalisa Sehat Sejahtera. Bergabung dan buatlah
+              suatu jaringan bisnis yang menyenangkan dengan berbagai macam
+              paket plan yang profitable.
+            </p>
+            <div class="mt-4">
+              <a
+                href="#"
+                class="inline-block bg-white font-bold text-[#524A4E] py-3 px-6 rounded-full shadow-md hover:bg-gray-200 transition duration-300"
+                >PELUANG BISNIS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- deskripsi -->
+    <section class="mt-10">
+      <div
+        class="w-full mb-8 md:mb-0 flex flex-col items-center justify-center"
+      >
+        <!-- Deskripsi -->
+        <p class="text-sm lg:text-lg text-[#524A4E] text-center max-w-2xl">
+          PT. Kalisa Sehat Sejahtera bukan sekedar bisnis biasa pada umumnya.
+          Dengan produk yang kami ciptakan anda dapat mencapai impian anda
+          menjadi sukses dan meningkatkan kesadaran hidup sehat dan sejahtera.
+          Buatlah suatu perubahan dala hidup anda mulai sekarang dan ajak
+          orang-orang sekitar untuk membantu meningkatkan kehidupan mereka.
+        </p>
+      </div>
+    </section>
+
+    <!-- membangun bisnis dewek -->
+    <section class="mt-24">
+      <div
+        class="w-full mb-8 md:mb-0 flex flex-col items-center justify-center"
+      >
+        <!-- Judul visi -->
+        <h1 class="text-2xl lg:text-4xl text-center font-bold text-[#524A4E]">
+          MEMBANGUN BISNIS ANDA SENDIRI
+        </h1>
+        <hr class="border-[#524A4E] border-2 my-4 md:w-96 w-64" />
+
+        <!-- Deskripsi -->
+        <p class="text-sm lg:text-lg text-[#524A4E] text-center max-w-2xl">
+          Bekerja dengan waktu yang fleksibel menjadi salah satu tujuan Kalisa
+          Sehat Sejahtera. Bebaskan diri Anda dari rutinitas ‘9 hingga 5’ -
+          rancang jadwal Anda dan tentukan jam kerja Anda sendiri. Bangun bisnis
+          Anda yang dapat disesuiaikan dengan gaya hidup Anda Ketika
+          fleksibilitas terbukti memiliki pengaruh positif yang sangat besar
+          pada keseimbangan kehidupan kerja, peluang seperti ini bisa menjadi
+          apa yang Anda butuhkan.
+        </p>
+      </div>
+    </section>
+
+    <!-- card again -->
+    <section>
+      <div class="flex flex-col justify-center items-center mt-10">
+        <!-- <h1 class="text-3xl lg:text-4xl font-bold text-[#524A4E]">MISI KAMI</h1> -->
+        <h3 class="text-[#524A4E] font-semibold text-lg mb-2 text-center">
+          Daftar hari ini dan jadilah Member Kalisa Sehat Sejahtera.
+        </h3>
+        <hr class="border-[#524A4E] border-2 my-4 md:w-96 w-64" />
+        <section class="max-w-7xl mx-auto px-4 py-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+              <img
+                src="images/one (1).png"
+                alt="Ilustrasi 1"
+                class="mx-auto mb-4"
+              />
+              <p class="text-gray-600">
+                1. Memperkenalkan serta mengedukasi tentang apa itu bisnis era
+                digital dan bagaimana untuk menguasai pasar digital dengan
+                materi yang mudah dipahami dan terus mengikuti update.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+              <img
+                src="images/one (2).png"
+                alt="Ilustrasi 2"
+                class="mx-auto mb-4"
+              />
+              <p class="text-gray-600">
+                2. Menciptakan produk yang berkualitas dengan banyak permintaan
+                pasar sehingga mudah untuk dijual secara offline maupun online
+                dengan harga ekonomis profit naik drastis.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+              <img
+                src="images/one (3).png"
+                alt="Ilustrasi 3"
+                class="mx-auto mb-4"
+              />
+              <p class="text-gray-600">
+                3. Mencapai kesuksesan bersama dengan hidup yang lebih sehat dan
+                sejahtera serta memberi manfaat untuk sesama.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+              <img
+                src="images/one (4).png"
+                alt="Ilustrasi 4"
+                class="mx-auto mb-4"
+              />
+              <p class="text-gray-600">
+                4. Menciptakan bisnis yang jujur dan Amanah guna untuk
+                meningkatkan kepercayaan masyarakat.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto flex items-center justify-center">
+            <button class="mt-10">
+              <a
+                href="#"
+                class="inline-block bg-pink-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-pink-600 transition duration-300"
+                >DAFTAR DISINI</a
+              >
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-32">
+      <div class="max-w-7xl mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center lg:items-start"
+        >
+          <!-- Logo dan Deskripsi -->
+          <div class="text-center lg:text-left mb-4 lg:mb-0">
+            <img
+              src="images/logo.png"
+              alt="Logo Kalisa Sehat Sejahtera"
+              class="h-10 mr-4 mb-4"
+            />
+            <div class="mt-4 mb-4">
+              <p class="mt-2 text-sm">
+                PT. Kalisa Sentral Sejahtera. Telah ada inovasi-inovasi yang
+                sangat inovatif untuk Anda. <br />
+                Sebagai pilar Tempat Satu Timbul, 24 Lingkungan Berdiri. Semua
+                menjadi bagian dari <br />
+                Pengembangan Produk yang Dipercaya dalam Citra Kualitas dan
+                Mutu.
+              </p>
+            </div>
+            <div>
+              <p class="mt-2 text-xs">
+                © Copyright 2022 PT. Kalisa Sentral Sejahtera
+              </p>
+            </div>
+          </div>
+
+          <!-- Kontak dan Sosial Media -->
+
+          <div class="text-center lg:text-right">
+            <div class="flex justify-center lg:justify-end mt-2 space-x-4 mb-2">
+              <!-- Icons for social media -->
+              <a href="#" class="text-gray-300 hover:text-white">
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <!-- Facebook icon -->
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18 2h-3.5a4.5 4.5 0 00-4.5 4.5V10H7v4h3v6h4v-6h3l1-4h-4V6.5c0-.828.672-1.5 1.5-1.5H18V2z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <!-- Twitter icon -->
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12l2 2 4-4M12 20.003A8 8 0 104.687 3.635M22 12c0 5.523-4.477 10-10 10M22 12A10 10 0 0012 2"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <!-- Instagram icon -->
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zM16.293 7.293A1 1 0 0015.586 7H8.414a1 1 0 00-.707 1.707l3.293 3.293a1 1 0 001.414 0L16.293 7.293zM12 17a3 3 0 110-6 3 3 0 010 6z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="text-white">TENTANG KAMI</p>
+            <p class="text-white">KEBIJAKAN PRIVASI</p>
+            <p class="text-white">SYARAT & KETENTUAN</p>
+
+            <div class="mt-4">
+              <p class="mt-2">0251-1234-4568</p>
+              <p class="text-sm">Jl. Raya Kalipucang No.232, Kalipucang,</p>
+              <p class="text-sm">Kec. Kalipucang, Kab. Pangandaran,</p>
+              <p class="text-sm">Jawa Barat 46397</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Toggle Mobile Menu
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>
